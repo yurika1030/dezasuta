@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+ul li {
+    padding: 0 20px;
+    background: gray;
+}
+
+/*ipadの大きさが767px
+@media screen and (max-width: 767px) {
+    .wrap{
+        display:block;
+    }
+    .wrap div{
+        width:100%
+    }
