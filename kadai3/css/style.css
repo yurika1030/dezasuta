@@ -44,6 +44,7 @@ img {
 div {
     max-width: 960px;
     background-color: #eeeeee;
+    margin: 0 auto;
 }
 .top {
     font-size: 30px;
@@ -62,6 +63,9 @@ li {
     max-width: 30%;
     background-color: white;
     margin: 0 20px 40px;
+}
+img {
+    max-width: 100%;
 }
 ul h2 {
     color: green;
