@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 ul {
-    display: flex;
+    display: flex;/*タグの子要素が横並びになる
     justify-content: flex-start;
-    list-style: none;
-    max-width: 960px;
-    margin: 0 auto;
+    list-style: none;/*list-styleデフォルトは丸ぽちがつくがnoneで打ち消される
+    max-width: 960px;/*コンテンツの横幅
+    margin: 0 auto;/*サイトの中央に配置
 }
 
 ul li {

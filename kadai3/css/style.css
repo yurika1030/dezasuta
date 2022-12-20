@@ -76,7 +76,7 @@ ul h2 {
 p {
     margin: 10px;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 1;
 }
 
 @media screen and (max-width: 400px) {
