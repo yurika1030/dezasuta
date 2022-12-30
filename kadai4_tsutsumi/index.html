@@ -8,6 +8,7 @@
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです。">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,6 +20,17 @@
 
                 <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
                 <nav class="pc_nav">
+                    <ul>
+
+                        <li><a href="#about_us">ABOUT US</a></li>
+                        <li><a href="#menu">MENU</a></li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li><a href="#event">EVENT</a></li>
+                        <li><a href="#access">ACCESS</a></li>
+                    </ul>
+                </nav>
+                <div class="sp_btn"><span></span></div>
+                <nav class="sp_nav">
                     <ul>
 
                         <li><a href="#about_us">ABOUT US</a></li>
@@ -40,10 +52,10 @@
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
         </div>
 
-        <div id="about_us">
-            <div><img src="images/pc_about-100.jpg" alt="乾杯している様子"></div>
-            <div>
-                <h2><img src="images/about_us@2x.png" alt="about us"></h2>
+        <section id="about" class="section">
+            <div class="about_img"><img src="images/pc_about-100.jpg" alt="乾杯している様子"></div>
+            <div class="about_text">
+                <h2><img src="images/about_us@2x.png" alt="ABOUT US"></h2>
                 <p class="topic">私たちが提供する<br>こだわりのコーヒー</p>
                 <p class="detail">
                     サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
@@ -53,30 +65,30 @@
                     サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                 </p>
             </div>
-        </div>
-        <div id="menu">
-            <h2><img src="images/menu@2x.png" alt="menu"></h2>
-            <ul>
+        </section>
+        <section id="menu" class="section">
+            <h2><img src="images/menu@2x.png" alt="MENU"></h2>
+            <ul class="menu_contents">
                 <li>
-                    <img src="images/pc_menu_drink-100.jpg" alt="">
+                    <img src="images/pc_menu_drink-100.jpg" alt="テーブルに置かれたコーヒー">
                     <h3>Drink</h3>
                     <p>ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </li>
                 <li>
-                    <img src="images/pc_menu_food-100.jpg" alt="">
+                    <img src="images/pc_menu_food-100.jpg" alt="デーブルに置かれたパスタ">
                     <h3>Food</h3>
                     <p>フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </li>
                 <li>
-                    <img src="images/pc_menu_sweets-100.jpg" alt="">
+                    <img src="images/pc_menu_sweets-100.jpg" alt="お皿に盛ったショートケーキ">
                     <h3>Sweets</h3>
                     <p>スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <div id="gallery">
-            <h2><img src="images/gallery@2x.png" alt=""></h2>
+            <h2><img src="images/gallery@2x.png" alt="GALLERY"></h2>
 
             <div><img src="images/pc_gallary_05-100.jpg" alt=""><img src="images/pc_gallary_04-100.jpg" alt=""><img
                     src="images/pc_gallary_03-100.jpg" alt=""><img src="images/pc_gallary_02-100.jpg" alt=""><img
@@ -84,19 +96,25 @@
 
 
         </div>
-        <div id="event">
-            <h2><img src="images/event@2x.png" alt=""></h2>
-            <div class="box">
-                <ul>
-                    <li><span class="date">2020.06.23</span> 7月はイベント出店のため0/0お休みします</li>
-                    <li><span class="date">2020.03.15</span>春の新商品新発売。話題のあのブランドとコラボ</li>
-                    <li><span class="date">2020.02.06</span> コーヒーの日で30％OFFイベントを開催［3日間限定］</li>
-                </ul>
 
+        <section id="event" class="section">
+            <h2><img src="images/event@2x.png" alt="EVENT"></h2>
+            <div class="event_list">
+                <ul>
+                    <li><time class="date" datetime="2020-06-23">2020.06.23</time><a href="">7月はイベント出店のため0/0お休みします</a>
+                    </li>
+                    <li><time class="date" datetime="2020-03-15">2020.03.15</time><a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
+                    </li>
+                    <li><time class="date" datetime="2020-02-06">2020.02.06</time><a
+                            href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a></li>
+                </ul>
             </div>
-        </div>
+        </section>
+
+
+
         <div id="access">
-            <h2><img src="images/access@2x.png" alt=""></h2>
+            <h2><img src="images/access@2x.png" alt="ACCESS"></h2>
             <div class="map"><iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.769987216808!2d139.6994471155968!3d35.65803823885027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1671519417970!5m2!1sja!2sjp"
                     style="border:0;" allowfullscreen="" loading="lazy"
@@ -107,12 +125,12 @@
 
     </main>
     <footer>
-        <div class="footer_wrap">
+        <section id="footer" class="section">
 
             <div class="footer_logo">
-                <img src="images/design_cafe_logo_footer@2x.png" alt="">
+                <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE">
             </div>
-            <div class="information">
+            <div class="footer_info">
                 <ul>
                     <li>OPEN 18:00 / CLOSE 24:00</li>
                     <li>〒150-0022</li>
@@ -120,18 +138,28 @@
                     <li>MAIL：info@designcafe.tokyo</li>
                 </ul>
             </div>
+        </section>
 
-            <div class="to_top">
-                <a href="#header_slider"><img src="images/to_top@2x.png" alt=""></a>
-            </div>
-
-
-
+        <div class="to_top">
+            <a href="#header_slider"><img src="images/to_top@2x.png" alt=""></a>
         </div>
-        <p class="copyright">© 2021 DESIGN CAFE</p>
+
+
+
+
+        <p class="footer_copy">© 2021 DESIGN CAFE</p>
     </footer>
 
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            });
 
+        });
+
+    </script>
 </body>
 
 </html>
