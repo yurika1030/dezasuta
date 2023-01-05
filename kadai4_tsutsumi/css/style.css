@@ -225,7 +225,7 @@ main {
     margin-right: 10px;
 }
 
-#about_text h2 {
+.about_text h2 {
     width: 272px;
 }
 
@@ -267,6 +267,7 @@ h3 {
     color: #d30202;
     font-size: 38px;
     margin-top: -12px;
+    margin-left: 13px;
     font-weight: normal;
 }
 
@@ -312,27 +313,34 @@ li p {
     padding-right: 50px;
     line-height: 1.95;
 }
+
 #access h2 {
     width: 213px;
     margin: 75px auto 45px;
 }
+
 .map iframe {
     display: block;
     width: 100%;
     height: 470px;
 }
+
 .footer_wrap {
     display: flex;
     margin-top: 80px;
+    padding-left: 10px;
+    color: black;
 }
 
 .footer_logo {
     width: 226px;
 }
+
 .footer_info {
     font-size: 20px;
     margin-left: 65px;
 }
+
 .footer_info li {
     line-height: 1.95;
 }
@@ -341,8 +349,13 @@ li p {
     position: fixed;
     bottom: 0;
     right: 0;
+    width: 125px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
+
 .footer_copy {
     margin: 70px auto;
     text-align: center;
+    color: black;
 }
