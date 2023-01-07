@@ -52,6 +52,13 @@ img {
 }
 
 /*header*/
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
 
 .header_wrap {
     position: absolute;
@@ -329,7 +336,6 @@ li p {
     display: flex;
     margin-top: 80px;
     padding-left: 10px;
-    color: black;
 }
 
 .footer_logo {
@@ -343,6 +349,7 @@ li p {
 
 .footer_info li {
     line-height: 1.95;
+    color: black;
 }
 
 .to_top {
@@ -358,4 +365,142 @@ li p {
     margin: 70px auto;
     text-align: center;
     color: black;
+}
+
+/*スマホ版*/
+
+@media screen and (max-width: 375px) {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .header_logo {
+        width: 187px;
+    }
+
+    .lead1 {
+        font-size: 17px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .lead2 {
+        font-size: 38px;
+        letter-spacing: 0em;
+        line-height: 1.15;
+        padding-bottom: 20px;
+    }
+
+    .lead3 {
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        line-height: 1.87;
+        padding-bottom: 65px;
+    }
+
+    .section {
+        width: 335px;
+        margin: 0 auto;
+    }
+
+    #about {
+        display: block;
+    }
+
+    .about_logo {
+        width: 160px;
+        margin: 0 auto 15px;
+    }
+
+    .sp img {
+        width: 100%;
+    }
+
+    .about_text {
+        width: 100%;
+    }
+
+    .topic {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+
+    .detail {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    #menu h2 {
+        width: 87px;
+        margin: 58px auto 20px;
+    }
+
+    .menu_contents {
+        display: block;
+    }
+
+    .menu_contents li {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .menu_contents p {
+        font-size: 17px;
+        margin: 30px auto 60px;
+        line-height: 1.58;
+    }
+
+    #gallery h2 {
+        width: 142px;
+        margin: 30px auto 20px;
+    }
+
+    #gallery div {
+        display: block;
+        width: 100%;
+    }
+
+    .pc img {
+        display: none;
+    }
+
+    #event h2 {
+        width: 100px;
+        margin: 30px auto 20px;
+    }
+
+    .event_list {
+        display: block;
+        font-size: 16px;
+    }
+
+    #access h2 {
+        width: 124px;
+        margin: 30px auto 10px;
+    }
+
+    .footer_wrap {
+        display: block;
+    }
+
+    .footer_logo {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .footer_info {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .to_top {
+        width: 100px;
+    }
 }
