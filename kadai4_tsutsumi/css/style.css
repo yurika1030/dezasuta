@@ -51,12 +51,16 @@ img {
     border: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*header*/
-.pc {
+.pc_only {
     display: block;
 }
 
-.sp {
+.sp_only {
     display: none;
 }
 
@@ -290,7 +294,7 @@ li p {
 }
 
 #gallery div {
-    width: 20%;
+    width: 100%;
     display: flex;
 }
 
@@ -369,12 +373,12 @@ li p {
 
 /*スマホ版*/
 
-@media screen and (max-width: 375px) {
-    .pc {
+@media screen and (max-width: 767px) {
+    .pc_only {
         display: none;
     }
 
-    .sp {
+    .sp_only {
         display: block;
     }
 
@@ -402,11 +406,6 @@ li p {
         padding-bottom: 65px;
     }
 
-    .section {
-        width: 335px;
-        margin: 0 auto;
-    }
-
     #about {
         display: block;
     }
@@ -417,11 +416,13 @@ li p {
     }
 
     .sp img {
-        width: 100%;
+        width: 100px;
     }
 
     .about_text {
         width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
     }
 
     .topic {
@@ -432,6 +433,10 @@ li p {
     .detail {
         font-size: 16px;
         line-height: 1.75;
+    }
+
+    #menu {
+        padding: 0 38px;
     }
 
     #menu h2 {
@@ -467,18 +472,31 @@ li p {
         width: 100%;
     }
 
-    .pc img {
-        display: none;
-    }
-
     #event h2 {
         width: 100px;
         margin: 30px auto 20px;
     }
 
+    #event {
+        padding: 0 20px;
+    }
+
     .event_list {
         display: block;
         font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .event_list li + li {
+        margin-top: 15px;
+    }
+
+    .event_list a {
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     #access h2 {
@@ -486,13 +504,18 @@ li p {
         margin: 30px auto 10px;
     }
 
+    .map iframe {
+        height: 190px;
+    }
+
     .footer_wrap {
         display: block;
+        margin-top: 40px;
+        padding-left: 20px;
     }
 
     .footer_logo {
-        margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .footer_info {
@@ -500,7 +523,47 @@ li p {
         margin-left: 0;
     }
 
+    .footer_info li {
+        line-height: 1.72;
+    }
+
+    .footer_copy {
+        margin: 40px auto 30px;
+    }
+
     .to_top {
         width: 100px;
     }
 }
+
+/*スライダー調整*/
+.slick-dots {
+    bottom: 20px;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+/*課題６*/
+
+/*.prev-arrow {
+    position: relative;
+    z-index: 100;
+}
+
+.prev-arrow::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    position: absolute;
+    left: 420px;
+    top: 50%;
+    transform: rotate(-135deg);
+}
+*/
