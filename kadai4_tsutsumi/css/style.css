@@ -550,20 +550,49 @@ li p {
 
 /*課題６*/
 
-/*.prev-arrow {
-    position: relative;
-    z-index: 100;
-}
-
-.prev-arrow::before {
+.slick-arrow::before {
     content: "";
+    position: absolute;
+    top: 50%;
     width: 20px;
     height: 20px;
-    border-top: solid 2px #fff;
-    border-right: solid 2px #fff;
-    position: absolute;
-    left: 420px;
-    top: 50%;
-    transform: rotate(-135deg);
+    border-top: solid 5px #fff;
+    border-right: solid 5px #fff;
 }
-*/
+
+.slick-prev {
+    left: 21%;
+    z-index: 1;
+}
+
+.slick-prev::before {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.slick-next {
+    right: 23%;
+}
+
+.slick-next::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .slick-arrow::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 11px;
+        height: 11px;
+        border-top: solid 2px #fff;
+        border-right: solid 2px #fff;
+    }
+
+    .slick-prev {
+        left: 3%;
+    }
+
+    .slick-next {
+        right: 5%;
+    }
+}
