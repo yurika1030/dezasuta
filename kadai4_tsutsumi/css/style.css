@@ -588,8 +588,12 @@ li p {
         border-right: solid 2px #fff;
     }
 
+    .slick-arrow {
+        transform: translate(-50%, -50%);
+    }
+
     .slick-prev {
-        left: 3%;
+        left: 5%;
     }
 
     .slick-next {
