@@ -12,8 +12,7 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 
     <script>
@@ -30,29 +29,21 @@
 
     </script>
 
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'xfq7kzk',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <header>
         <div>
             <picture>
-                <source srcset="images/2x/top_img_sp@2x-80.jpg" media=" (max-width: 767px)">
-                <img src="images/2x/top_img@2x-80.jpg" alt="手紙">
+                <source srcset="images/top_img_sp@2x-80.jpg" media=" (max-width: 767px)">
+                <img src="images/top_img@2x-80.jpg" alt="手紙">
             </picture>
         </div>
 
-        <div class="header_wrap">
+        <div id="header_slider" class="header_wrap">
             <span class="header_border"></span>
 
             <h1 class="header_title">TO.YOU</h1>
@@ -60,11 +51,11 @@
             <nav class="pc_nav">
                 <ul>
 
-                    <li><a href="#SERVICE">SERVICE</a></li>
-                    <li><a href="#WORKS">WORKS</a></li>
-                    <li><a href="#SKILL">SKILL</a></li>
-                    <li><a href="#ABOUT">ABOUT</a></li>
-                    <li><a href="#CONTACT">CONTACT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
 
             </nav>
@@ -72,12 +63,19 @@
             <nav class="sp_nav">
                 <ul>
 
-                    <li><a href="#SERVICE">SERVICE</a></li>
-                    <li><a href="#WORKS">WORKS</a></li>
-                    <li><a href="#SKILL">SKILL</a></li>
-                    <li><a href="#ABOUT">ABOUT</a></li>
-                    <li><a href="#CONTACT">CONTACT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+
                 </ul>
+
+                <div class="icon">
+                    <img src="images/Instagram_sp.svg" alt="インスタグラムのアイコン">
+                    <img src="images/mail_sp.svg" alt="メールのアイコン">
+                </div>
             </nav>
         </div>
 
@@ -104,19 +102,19 @@
             <p>提供できること</p>
             <ul class="service_contents">
                 <li>
-                    <div><img src="images/SVG/direction.svg" alt="ペンと紙のイラスト"></div>
+                    <div><img src="images/direction.svg" alt="ペンと紙のイラスト"></div>
 
                     <h3>ディレクション</h3>
                     <p>まず、お客様の要望を丁寧に、ヒアリングしていきます。どういう効果を得たいのか、そのためにどのような要素が必要であるかを、綿密に計画していきます。</p>
                 </li>
                 <li>
-                    <div><img src="images/SVG/design.svg" alt="ペイントのイラスト"></div>
+                    <div><img src="images/design.svg" alt="ペイントのイラスト"></div>
 
                     <h3>デザイン</h3>
                     <p>ホームページ、LPやバナーなどのウェブ制作から、名刺、ショップカード、チラシなどの印刷物まで、様々なデザインを承ります。</p>
                 </li>
                 <li>
-                    <div><img src="images/SVG/cording.svg" alt="パソコンのキーボードのイラスト"></div>
+                    <div><img src="images/cording.svg" alt="パソコンのキーボードのイラスト"></div>
 
                     <h3>コーディング</h3>
                     <p>どのデバイスで見ても、見やすいようにコーディング（レスポンシブ対応）いたします。
@@ -128,23 +126,36 @@
         <section id="works" class="section">
             <h2>works</h2>
             <p>制作したもの</p>
-            <ul class="works_slider">
-                <li><img src="images/2x/works_1@2x.png" alt="携帯料金プランバナー"></li>
-                <li><img src="images/2x/works_2@2x.png" alt="旅行支援アプリ広告バナー"></li>
-                <li><img src="images/2x/works_3@2x.png" alt="ハンバーガー広告"></li>
-                <li><img src="images/2x/works_4@2x.png" alt="ヘアサロンLPサイト"></li>
-                <li><img src="images/2x/works_5@2x.png" alt="コワーキングスペース紹介LPサイト"></li>
-                <li><img src="images/2x/works_6@2x.png" alt="カフェサイト"></li>
-            </ul>
-            <p class="all">ALL</p>
         </section>
+
+        <ul class="works_slider">
+            <li><img src="images/works_1@2x.png" alt="携帯料金プランバナー"></li>
+            <li><img src="images/works_2@2x.png" alt="旅行支援アプリ広告バナー"></li>
+            <li><img src="images/works_3@2x.png" alt="ハンバーガー広告"></li>
+            <li><img src="images/works_4@2x.png" alt="ヘアサロンLPサイト"></li>
+            <li><img src="images/works_5@2x.png" alt="コワーキングスペース紹介LPサイト"></li>
+            <li><img src="images/works_6@2x.png" alt="カフェサイト"></li>
+
+        </ul>
+
+
+
+
+        <div class="all_btn btn">
+            <p>ALL</p>
+            <div class="arrow">
+                <div class="line01"></div>
+                <div class="line02"></div>
+            </div>
+        </div>
+
 
         <section id="about" class="section">
             <h2>about</h2>
             <p>私について</p>
 
             <div class="about_container">
-                <img src="images/2x/profile@2x.png" alt="私の顔写真">
+                <img src="images/profile@2x.png" alt="私の顔写真">
                 <div>
                     <p class="name">YURIKA　-ゆりか-（1995.10.30）</p>
                     <p class="job">ウェブデザイナー/グラフィックデザイナー</p>
@@ -154,55 +165,128 @@
                     </p>
                 </div>
             </div>
-            <p>MORE</p>
         </section>
+        <div class="more_btn btn">
+            <p>MORE</p>
+            <div class="arrow">
+                <div class="line01"></div>
+                <div class="line02"></div>
+            </div>
+        </div>
+
 
         <section id="skill" class="section">
             <h2>skill</h2>
             <p>できること</p>
-            <div>
+            <ul class="skill_contents">
+                <li><img src="images/AI.svg" alt="illustratorのアイコン">
+                    <p>Illustrator</p>
+                </li>
+                <li><img src="images/PS.svg" alt="Photoshopのアイコン">
+                    <p>Photoshop</p>
+                </li>
+                <li><img src="images/JS.svg" alt="Javascriptのアイコン">
+                    <p>Javascript</p>
+                </li>
 
-            </div>
-            <div></div>
+            </ul>
+            <ul class="skill_contents">
+                <li><img src="images/VScode.svg" alt="VScodeのアイコン">
+                    <p>VScode</p>
+                </li>
+                <li><img src="images/HTML.svg" alt="HTMLのアイコン">
+                    <p>HTML</p>
+                </li>
+                <li><img src="images/CSS.svg" alt="CSSのアイコン">
+                    <p>CSS</p>
+                </li>
+                <li><img src="images/Figma.svg" alt="Figmaのアイコン">
+                    <p>Figma</p>
+                </li>
+            </ul>
         </section>
 
         <section id="contact" class="section">
             <h2>contact</h2>
             <p>手紙を送ってみる</p>
-            <img src="images/2x/contact@2x.png" alt="はがきのイラスト">
 
-            <form class="contact_conteiner">
-                <label>
-                    <input type="text" placeholder="名前" />
-                </label>
-                <label>
-                    <input type="text" placeholder="メールアドレス" />
-                </label>
-                <label>
-                    <input type="text" placeholder="メッセージ" />
-                </label>
-            </form>
+            <div class="contact_body" style="background-image: url(images/contact@2x.png);">
+
+                <form class="contact_conteiner">
+                    <label>
+                        <input type="text" placeholder="名前" />
+                    </label>
+                    <label>
+                        <input type="text" placeholder="メールアドレス" />
+                    </label>
+                    <label>
+                        <input type="text" placeholder="メッセージ" />
+                    </label>
+                </form>
+            </div>
+
+
+
+            <p class="announce">Put in the post</p>
+            <img src="images/POST.svg" alt="ポストのイラスト">
+
         </section>
     </main>
+    <script>
+        $(function () {
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            });
+
+            $('.works_slider').slick({
+                infinite: true,
+                arrows: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+
+
+        });
+    </script>
 </body>
-<script>
-    $(function () {
-        $('.sp_btn,.sp_nav li').on('click', function () {
-            $('.sp_btn').toggleClass('open');
-            $('.sp_nav').fadeToggle();
-        });
-
-        $('.works_slider').slick({
-            infinite: true,
-            arrows: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        });
+<footer>
+    <div class="footer_wrap">
+        <span class="footer_border"></span>
 
 
 
-    });
-</script>
+        <nav class="pc_nav">
+            <ul>
+
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+        </nav>
+        <div class="footer_title">FROM. <span>yurika</span>
+        </div>
+    </div>
+
+
+
+    <div class="to_top">
+
+
+        <a href="#header_slider">
+            <p>TO TOP</p>
+        </a>
+        <a href="#header_slider"><img src="images/to_top.svg" alt="トップへ戻る"></a>
+
+
+    </div>
+    <div class="copyright">
+        <p>@copyright 2023 TO.YOU all right reserved.</p>
+    </div>
+</footer>
 
 </html>
