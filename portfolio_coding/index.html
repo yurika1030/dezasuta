@@ -46,13 +46,15 @@
         <div id="header_slider" class="header_wrap">
             <span class="header_border"></span>
 
-            <h1 class="header_title">TO.YOU</h1>
+            <a href="index.html">
+                <h1 class="header_title">TO.YOU</h1>
+            </a>
 
             <nav class="pc_nav">
                 <ul>
 
                     <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="works/index.html">WORKS</a></li>
                     <li><a href="#skill">SKILL</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -64,7 +66,7 @@
                 <ul>
 
                     <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="works/index.html">WORKS</a></li>
                     <li><a href="#skill">SKILL</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -93,11 +95,11 @@
             <p class="lead1 element">TO.YOU</p>
             <div class="letter element">
                 <p class="lead2 eachTextAnime">このサイトを見ているあなたへ。<br>
-                    はじめまして。このサイトは、私から「 あなた 」へ向けた手紙です。<br>
-                    “TO. YOU”には、あなたに向けた、あなたのためだけにある、世界に1つの<br>
-                    ウェブデザインを提案したいという想いを込めています。<br>
-                    あなたは今どんなデザインが欲しいと想像していますか。<br>
-                    私は、あなたの中にあるその“想像”を見えるカタチに“創造”します。<br></p>
+                    はじめまして。<br class="sp_only">このサイトは、私から「 あなた 」へ向けた手紙です。<br class="pc_only">
+                    “TO. YOU”には、あなたに向けた、あなたのためだけにある、世界に1つの<br class="pc_only">
+                    ウェブデザインを提案したいという想いを込めています。<br class="pc_only">
+                    あなたは今どんなデザインが欲しいと想像していますか。<br class="pc_only">
+                    私は、あなたの中にあるその“想像”を見えるカタチに“創造”します。</p>
             </div>
 
             <p class="lead3 element">yurika</p>
@@ -135,12 +137,12 @@
         </section>
 
         <ul class="works_slider">
-            <li><a href="works/work1/index.html"><img src="images/works_1@2x.png" alt="携帯料金プランバナー"></a></li>
-            <li><a href="works/work2/index.html"><img src="images/works_2@2x.png" alt="旅行支援アプリ広告バナー"></a></li>
+            <li><a href="works/work1.html"><img src="images/works_1@2x.png" alt="携帯料金プランバナー"></a></li>
+            <li><a href="works/work2.html"><img src="images/works_2@2x.png" alt="旅行支援アプリ広告バナー"></a></li>
             <li><a href="works/work3/index.html"><img src="images/works_3@2x.png" alt="ハンバーガー広告"></a></li>
-            <li><a href="works/work4/index.html"><img src="images/works_4@2x.png" alt="ヘアサロンLPサイト"></a></li>
-            <li><a href="works/work5/index.html"><img src="images/works_5@2x.png" alt="コワーキングスペース紹介LPサイト"></a></li>
-            <li><a href="works/work6/index.html"><img src="images/works_6@2x.png" alt="カフェサイト"></a></li>
+            <li><a href="works/work4.html"><img src="images/works_4@2x.png" alt="ヘアサロンLPサイト"></a></li>
+            <li><a href="works/work5.html"><img src="images/works_5@2x.png" alt="コワーキングスペース紹介LPサイト"></a></li>
+            <li><a href="works/work6.html"><img src="images/works_6@2x.png" alt="カフェサイト"></a></li>
 
         </ul>
 
@@ -222,16 +224,22 @@
 
             <div class="contact_body pc_only" style="background-image: url(images/contact@2x.png);">
 
-                <form class="contact_conteiner">
+                <form class="contact_conteiner"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/formResponse">
                     <label>
-                        <input type="text" placeholder="名前">
+                        <input type="text" name="entry.1405721956" placeholder="名前">
                     </label>
                     <label>
-                        <input type="text" placeholder="メールアドレス">
+                        <input type="text" name="entry.1474901579" placeholder="メールアドレス">
                     </label>
                     <label>
-                        <textarea type="text" placeholder="メッセージ"></textarea>
+                        <textarea type="text" name="entry.587518478" placeholder="メッセージ"></textarea>
                     </label>
+
+                    <p class="announce">Put in the post</p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/viewform?usp=sf_link"><img
+                            src="images/POST.svg" alt="ポストのイラスト"></a>
                 </form>
             </div>
 
@@ -250,13 +258,47 @@
                 </form>
             </div>
 
-
-
-            <p class="announce">Put in the post</p>
-            <img src="images/POST.svg" alt="ポストのイラスト">
-
         </section>
     </main>
+
+
+    <footer>
+        <div class="footer_wrap">
+
+
+
+
+            <nav class="pc_nav">
+                <ul>
+
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="works/index.html">WORKS</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+            </nav>
+            <div class="footer_title">FROM. <span>yurika</span>
+            </div>
+        </div>
+
+
+
+        <div class="to_top">
+
+
+            <a href="#header_slider">
+                <p>TO TOP</p>
+            </a>
+            <a href="#header_slider"><img src="images/to_top.svg" alt="トップへ戻る"></a>
+
+
+        </div>
+
+        <p class="copyright">© 2023 TO.YOU all right reserved.</p>
+
+    </footer>
     <script>
         $(function () {
 
@@ -302,45 +344,6 @@
             });
         });
     </script>
-
-    <footer>
-        <div class="footer_wrap">
-
-
-
-
-            <nav class="pc_nav">
-                <ul>
-
-                    <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                    <li><a href="#skill">SKILL</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-
-            </nav>
-            <div class="footer_title">FROM. <span>yurika</span>
-            </div>
-        </div>
-
-
-
-        <div class="to_top">
-
-
-            <a href="#header_slider">
-                <p>TO TOP</p>
-            </a>
-            <a href="#header_slider"><img src="images/to_top.svg" alt="トップへ戻る"></a>
-
-
-        </div>
-
-        <p class="copyright">© 2023 TO.YOU all right reserved.</p>
-
-    </footer>
-
 </body>
 
 </html>

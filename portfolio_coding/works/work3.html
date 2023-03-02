@@ -42,7 +42,7 @@
                 <ul>
 
                     <li><a href="../index.html #service">SERVICE</a></li>
-                    <li><a href="works/index.html">WORKS</a></li>
+                    <li><a href="index.html">WORKS</a></li>
                     <li><a href="../index.html #skill">SKILL</a></li>
                     <li><a href="../index.html #about">ABOUT</a></li>
                     <li><a href="../index.html #contact">CONTACT</a></li>
@@ -54,7 +54,7 @@
                 <ul>
 
                     <li><a href="../index.html #service">SERVICE</a></li>
-                    <li><a href="works/index.html">WORKS</a></li>
+                    <li><a href="index.html">WORKS</a></li>
                     <li><a href="../index.html #skill">SKILL</a></li>
                     <li><a href="../index.html #about">ABOUT</a></li>
                     <li><a href="../index.html #contact">CONTACT</a></li>
@@ -73,43 +73,98 @@
     </header>
 
     <main>
-        <section id="about" class="section">
-            <div class="title">
-                <div>
-                    <h2 class="element">about</h2>
-                    <p class="element">私について</p>
-                </div>
+        <section class="section load-fade">
+            <img class="top_img" src="images/works_3@2x.png" alt="ハンバーガー広告バナー">
+
+            <div class=" lead">
+                <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
+                <h2>概要</h2>
+                <p class=" lead_contents">
+                    ハンバーガー広告バナー<br>
+                    ・制作期間　1週間<br>
+                    ・制作費用　5000円～</p>
+
+
             </div>
 
-            <div class="about_contents">
-                <img src="images/profile@2x.png" alt="私の顔写真">
-                <div class="about_text">
-                    <div class="name">
-                        <p>名　前</p>
-                        <div><img src="images/name.svg" alt="YURIKA"></div>
-                    </div>
-                    <div class="job">
-                        <p>仕　事</p>
-                        <div><img src="images/job.svg" alt="ウェブデザイナー・グラフィックデザイナー"></div>
-                    </div>
-                    <div class="bloodtype">
-                        <p>血液型</p>
-                        <div><img src="images/bloodtype.svg" alt="B型"></div>
-                    </div>
-                    <div class="adress">
-                        <p>出　身</p>
-                        <div><img src="images/adress.svg" alt="山口県"></div>
-                    </div>
-                    <div class="message">
-                        <p>一　言</p>
-                        <div><img src="images/message.svg" alt="メッセージ"></div>
-                    </div>
-                </div>
+            <div class=" lead">
+                <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
+                <h2>担当範囲</h2>
+                <p class=" lead_contents">
+                    デザイン</p>
+
+
             </div>
+
+            <div class=" lead">
+                <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
+                <h2>依頼内容</h2>
+                <p class=" lead_contents long_contents">
+                    高級感のあるハンバーガー広告。
+                </p>
+
+
+            </div>
+
+            <div class=" lead">
+                <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
+                <h2>工夫点</h2>
+                <p class=" lead_contents long_contents">
+                    高級感を出すために、文字は明朝体でシックな印象に。<br>
+                    美味しそうに見えるよう暖色で統一しました。<br>
+                    また、背景に
+                    高級感ある店内の画像を配置することで、<br>
+                    購入するイメージが
+                    具体的に湧くようなデザインにしました。
+
+
+                </p>
+
+
+            </div>
+
+            <img class="foot_img" src="images/work3@2x-80.jpg" alt="ハンバーガー広告画像">
+
+            <div class="back_btn"><a href="index.html">Back</a></div>
         </section>
     </main>
+    <script>
+        $(function () {
+            // 変数にクラスを入れる
+            var btn = $('.to_top');
 
+            //スクロールしてページトップから100に達したらボタンを表示
+            $(window).on('load scroll', function () {
+                if ($(this).scrollTop() > 100) {
+                    btn.addClass('active');
+                } else {
+                    btn.removeClass('active');
+                }
+            });
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            });
+        });
 
+        $(function () {
+            load_effect();
+            $(window).scroll(function () {
+                scroll_effect();
+            });
+        });
+
+        function load_effect() {
+            var tt = $(window).scrollTop();
+            var hh = $(window).height();
+            $('.load-fade').each(function () {
+                var yy = $(this).offset().top;
+                if (tt > yy - hh) {
+                    $(this).addClass('done');
+                }
+            });
+        }
+    </script>
 
     <footer>
         <div class="footer_wrap">
@@ -121,7 +176,7 @@
                 <ul>
 
                     <li><a href="../index.html #service">SERVICE</a></li>
-                    <li><a href="../index.html #works">WORKS</a></li>
+                    <li><a href="index.html">WORKS</a></li>
                     <li><a href="../index.html #skill">SKILL</a></li>
                     <li><a href="../index.html #about">ABOUT</a></li>
                     <li><a href="../index.html #contact">CONTACT</a></li>
@@ -148,27 +203,6 @@
         <p class="copyright">© 2023 TO.YOU all right reserved.</p>
 
     </footer>
-    <script>
-        $(function () {
-            // 変数にクラスを入れる
-            var btn = $('.to_top');
-
-            //スクロールしてページトップから100に達したらボタンを表示
-            $(window).on('load scroll', function () {
-                if ($(this).scrollTop() > 100) {
-                    btn.addClass('active');
-                } else {
-                    btn.removeClass('active');
-                }
-            });
-
-            $('.sp_btn,.sp_nav li').on('click', function () {
-                $('.sp_btn').toggleClass('open');
-                $('.sp_nav').fadeToggle();
-            });
-        });
-    </script>
-
 </body>
 
 </html>
