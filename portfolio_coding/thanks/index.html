@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works</title>
-    <meta name="description" content="制作したもの">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <title>Thanks Page</title>
+    <meta name="description" content="お問い合わせありがとうございます">
+
+
     <link rel="stylesheet" href="css/style.css">
 
     <script>
@@ -26,7 +25,7 @@
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -42,7 +41,7 @@
                 <ul>
 
                     <li><a href="../index.html #service">SERVICE</a></li>
-                    <li><a href="index.html">WORKS</a></li>
+                    <li><a href="../works/index.html">WORKS</a></li>
                     <li><a href="../index.html #skill">SKILL</a></li>
                     <li><a href="../index.html #about">ABOUT</a></li>
                     <li><a href="../index.html #contact">CONTACT</a></li>
@@ -54,7 +53,7 @@
                 <ul>
 
                     <li><a href="../index.html #service">SERVICE</a></li>
-                    <li><a href="index.html">WORKS</a></li>
+                    <li><a href="../works/index.html">WORKS</a></li>
                     <li><a href="../index.html #skill">SKILL</a></li>
                     <li><a href="../index.html #about">ABOUT</a></li>
                     <li><a href="../index.html #contact">CONTACT</a></li>
@@ -62,8 +61,7 @@
 
                 </ul>
                 <div class="icon">
-                    <a href="https://www.instagram.com/t_yurika0520/"><img src="images/Instagram_sp.svg"
-                            alt="インスタグラムのアイコン"></a>
+                    <img src="images/Instagram_sp.svg" alt="インスタグラムのアイコン">
                     <a href="../index.html #contact"><img src="images/mail_sp.svg" alt="メールのアイコン"></a>
                 </div>
             </nav>
@@ -71,64 +69,21 @@
 
 
     </header>
-
     <main>
-        <section class="section load-fade">
-            <img class="top_img" src="images/works_1@2x.png" alt="携帯料金プラン広告">
-
-            <div class=" lead">
-                <div class="sp_contents">
-                    <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
-                    <h2>概要</h2>
-                </div>
-                <p class=" lead_contents">
-                    携帯料金プラン広告バナー<br>
-                    ・制作期間　1週間<br>
-                    ・制作費用　5000円～
-
+        <section class="section">
+            <div class="load-fade">
+                <h2>thank you</h2>
+                <p>お問い合わせありがとうございます。<br>
+                    3営業日以内にご連絡させていただきます。<br>
+                    しばらくお待ちください。<br>
                 </p>
             </div>
-
-            <div class=" lead">
-                <div class="sp_contents">
-                    <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
-                    <h2>担当範囲</h2>
-                </div>
-                <p class=" lead_contents">デザイン</p>
-
-            </div>
-
-            <div class=" lead">
-                <div class="sp_contents">
-                    <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
-                    <h2>依頼内容</h2>
-                </div>
-                <p class=" lead_contents long_contents">
-                    春限定の広告にちなんで春を感じるデザイン</p>
-
-
-            </div>
-
-            <div class=" lead">
-                <div class="sp_contents">
-                    <img class="lead_img" src="images/check.svg" alt="レチェックのイラスト">
-                    <h2>工夫点</h2>
-                </div>
-                <p class=" lead_contents long_contents">
-                    春らしくピンクをメインカラーにして、桜のあしらいをプラス。<br>
-                    背景に、ほんのり和紙感を入れるなど、シンプルの中にも<br>
-                    細部までこだわりをたっぷり詰めました。<br>
-
-                </p>
-
-
-            </div>
-
-            <img class="foot_img" src="images/work1@2x-80.jpg" alt="携帯料金プラン広告画像">
-
-            <div class="back_btn"><a href="index.html">Back</a></div>
+            <div class="back_btn"><a href="../index.html">Back</a></div>
         </section>
     </main>
+
+
+
 
     <footer>
         <div class="footer_wrap">
@@ -140,7 +95,7 @@
                 <ul>
 
                     <li><a href="../index.html #service">SERVICE</a></li>
-                    <li><a href="index.html">WORKS</a></li>
+                    <li><a href="../works/index.html">WORKS</a></li>
                     <li><a href="../index.html #skill">SKILL</a></li>
                     <li><a href="../index.html #about">ABOUT</a></li>
                     <li><a href="../index.html #contact">CONTACT</a></li>
@@ -169,32 +124,27 @@
     </footer>
     <script>
         $(function () {
-            // 変数にクラスを入れる
-            var btn = $('.to_top');
-
-            //スクロールしてページトップから100に達したらボタンを表示
-            $(window).on('load scroll', function () {
-                if ($(this).scrollTop() > 100) {
-                    btn.addClass('active');
-                } else {
-                    btn.removeClass('active');
-                }
-            });
 
             $('.sp_btn,.sp_nav li').on('click', function () {
                 $('.sp_btn').toggleClass('open');
                 $('.sp_nav').fadeToggle();
             });
-        });
 
-        $(function () {
-            load_effect();
-            $(window).scroll(function () {
-                scroll_effect();
+
+            // 変数にクラスを入れる
+            var btn = $('.to_top');
+
+            //スクロールしてページトップから200に達したらボタンを表示
+            $(window).on('load scroll', function () {
+                if ($(this).scrollTop() > 50) {
+                    btn.addClass('active');
+                } else {
+                    btn.removeClass('active');
+                }
             });
         });
 
-        function load_effect() {
+        $(function load_effect() {
             var tt = $(window).scrollTop();
             var hh = $(window).height();
             $('.load-fade').each(function () {
@@ -203,7 +153,8 @@
                     $(this).addClass('done');
                 }
             });
-        }
+
+        });
     </script>
 
 </body>

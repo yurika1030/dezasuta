@@ -67,7 +67,7 @@ header {
 
 .header_wrap {
     position: absolute;
-    top: 25px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     max-width: 1000px;
@@ -75,14 +75,15 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    padding: 10px 7% 0 3%;
+    padding: 35px 7% 0 3%;
     box-sizing: border-box;
+    z-index: 99;
 }
 .header_border {
     border-bottom: solid 1px #2b2b2b;
     opacity: 0.45;
     position: absolute;
-    top: 70px;
+    top: 90px;
     width: 87%;
 }
 
@@ -108,9 +109,11 @@ header {
 .scrolldown {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 45px;
+    width: 43px;
     /*全体の高さ*/
     height: 30px;
+    transform: translateX(-50%);
 }
 
 /*Scrollテキストの描写*/
@@ -229,7 +232,7 @@ header {
     opacity: 0.45;
 }
 
-.section p {
+.section > p {
     margin-top: 20px;
     margin-bottom: 48px;
 }
@@ -280,7 +283,7 @@ header {
     max-width: 720px;
     padding: 0 60px;
     display: flex;
-    margin: 0 auto; /*どうしたら中央寄せになりますか*/
+    margin: 0 auto;
 }
 
 /*スライダー調整*/
@@ -356,6 +359,8 @@ header {
 
 .about_container p {
     text-align: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .name {
@@ -378,7 +383,7 @@ header {
     justify-content: space-around;
     width: 600px;
     align-items: flex-end;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .skill_contents img {
@@ -397,6 +402,9 @@ header {
     height: 490px;
 }
 
+.contact_body button {
+    border: none;
+}
 .contact_conteiner {
     padding: 165px 60px 0;
 }
@@ -435,7 +443,7 @@ input:focus {
     font-size: 30px;
     letter-spacing: 0.08;
     width: 219px;
-    margin: 0 auto;
+    margin: 80px auto 4px;
 }
 
 .announce::before,
@@ -460,6 +468,8 @@ input:focus {
 
 #contact img {
     width: 100px;
+    margin-top: 30px;
+    cursor: pointer;
     animation: fluffy1 3s ease infinite;
 }
 /*ポストの動き*/
@@ -495,7 +505,7 @@ input:focus {
     justify-content: space-between;
     align-items: flex-end;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 200px auto;
     padding-top: 70px;
     box-sizing: content-box;
     border-bottom: 1px solid rgba(58, 58, 58, 0.45);
@@ -550,6 +560,11 @@ input:focus {
     .pc_nav {
         display: none;
     }
+
+    .scrolldown {
+        display: none;
+    }
+
     .header_border {
         display: none;
     }
@@ -569,7 +584,7 @@ input:focus {
 
     .sp_btn {
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 25px;
         display: block;
         height: 23px;
@@ -653,15 +668,12 @@ input:focus {
         margin: -200px auto 0;
         align-items: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 80px;
-        transform: translateX(-30px);
     }
 
-    .icon img {
+    .icon a {
         width: 29px;
-        margin-left: 40px;
-        margin-right: 10px;
     }
 }
 
@@ -683,16 +695,22 @@ input:focus {
         margin-bottom: 20px;
     }
 
-    .header_wrap {
-        top: 10px;
-    }
-
     .header_title {
         font-size: 30px;
     }
 
     .top_wrap {
         max-width: 315px;
+    }
+
+    .load-fade {
+        opacity: 0;
+        transition: all 4s /*処理にかかる時間*/;
+    }
+
+    .load-fade.done {
+        opacity: 1;
+        transform: translate(0, 0);
     }
 
     .letter {
@@ -762,6 +780,7 @@ input:focus {
 
     .about_container img {
         width: 53%;
+        margin-bottom: 20px;
     }
 
     .about_container p {
@@ -770,7 +789,7 @@ input:focus {
 
     .name {
         text-align: center;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
     .comment {
@@ -844,6 +863,7 @@ input:focus {
 
     #contact img {
         width: 50px;
+        margin-top: 15px;
     }
 
     .footer_wrap {

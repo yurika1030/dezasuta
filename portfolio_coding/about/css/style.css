@@ -69,6 +69,7 @@ body {
     margin: 25px auto;
     box-sizing: content-box;
     border-bottom: 1px solid rgba(58, 58, 58, 0.45);
+    z-index: 99;
 }
 
 .header_title {
@@ -111,19 +112,22 @@ body {
 
 .about_contents {
     display: flex;
-    justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 150px;
 }
 
-.about_contents img {
+.about_img {
     width: 30%;
     height: 30%;
     margin-left: 10px;
 }
 
+.about_text {
+    width: 70%;
+    margin-left: 20px;
+}
+
 .about_text div {
-    display: flex;
     margin-bottom: 20px;
 }
 
@@ -135,6 +139,13 @@ body {
 
 .about_text img {
     margin-top: 20px;
+}
+.name,
+.job,
+.bloodtype,
+.adress,
+.message {
+    display: flex;
 }
 
 .name div {
@@ -157,9 +168,12 @@ body {
     border-bottom: 1px solid #8c8b8b;
 }
 
+.message {
+    position: relative;
+}
+
 .message div {
     width: 100%;
-    border-bottom: 1px solid #8c8b8b;
 }
 
 .footer_wrap {
@@ -235,6 +249,10 @@ body {
         border-bottom: none;
     }
 
+    .header_title {
+        margin-left: 20px;
+    }
+
     .footer_wrap {
         border-bottom: none;
     }
@@ -247,7 +265,7 @@ body {
 
     .sp_btn {
         position: absolute;
-        top: 25px;
+        top: 30px;
         right: 25px;
         display: block;
         height: 23px;
@@ -290,10 +308,12 @@ body {
     .sp_btn.open span::before {
         bottom: 0;
         transform: rotate(45deg);
+        background-color: #dddcdc;
     }
     .sp_btn.open span::after {
         top: 0;
         transform: rotate(135deg);
+        background-color: #dddcdc;
     }
 
     /*ハンバーガーメニュー*/
@@ -322,19 +342,15 @@ body {
     }
 
     .icon {
-        margin: 0 auto;
+        margin: -200px auto 0;
         align-items: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 80px;
-        margin-top: -200px;
-        transform: translateX(-30px);
     }
 
-    .icon img {
+    .icon a {
         width: 29px;
-        margin-left: 40px;
-        margin-right: 10px;
     }
 }
 
@@ -345,11 +361,13 @@ body {
 
     .section h2 {
         font-size: 60px;
+        text-align: center;
     }
 
     .section p {
         margin-top: 8px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        text-align: center;
     }
 
     .header_wrap {
@@ -358,6 +376,47 @@ body {
 
     .header_title {
         font-size: 30px;
+    }
+
+    .title {
+        margin: 100px auto 0;
+    }
+
+    .about_contents {
+        display: block;
+    }
+
+    .about_img {
+        width: 70%;
+        height: 25%;
+        margin: 0 auto 20px;
+    }
+
+    .about_text {
+        width: 100%;
+    }
+
+    .about_text p {
+        margin: 0 auto;
+    }
+
+    .about_text div {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .message div {
+        background-image: none;
+        border-top: 1px solid #8c8b8b;
+        border-bottom: 1px solid #8c8b8b;
+    }
+
+    .name,
+    .job,
+    .bloodtype,
+    .adress,
+    .message div {
+        margin-top: 20px;
     }
 
     .footer_title {

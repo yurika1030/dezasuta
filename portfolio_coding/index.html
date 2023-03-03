@@ -91,10 +91,10 @@
 
     </header>
     <main>
-        <div class="top_wrap">
+        <div class="top_wrap pc_only">
             <p class="lead1 element">TO.YOU</p>
             <div class="letter element">
-                <p class="lead2 eachTextAnime">このサイトを見ているあなたへ。<br>
+                <p class="lead2">このサイトを見ているあなたへ。<br>
                     はじめまして。<br class="sp_only">このサイトは、私から「 あなた 」へ向けた手紙です。<br class="pc_only">
                     “TO. YOU”には、あなたに向けた、あなたのためだけにある、世界に1つの<br class="pc_only">
                     ウェブデザインを提案したいという想いを込めています。<br class="pc_only">
@@ -103,6 +103,20 @@
             </div>
 
             <p class="lead3 element">yurika</p>
+        </div>
+
+        <div class="top_wrap sp_only load-fade">
+            <p class="lead1">TO.YOU</p>
+            <div class="letter">
+                <p class="lead2">このサイトを見ているあなたへ。<br>
+                    はじめまして。<br class="sp_only">このサイトは、私から「 あなた 」へ向けた手紙です。<br class="pc_only">
+                    “TO. YOU”には、あなたに向けた、あなたのためだけにある、世界に1つの<br class="pc_only">
+                    ウェブデザインを提案したいという想いを込めています。<br class="pc_only">
+                    あなたは今どんなデザインが欲しいと想像していますか。<br class="pc_only">
+                    私は、あなたの中にあるその“想像”を見えるカタチに“創造”します。</p>
+            </div>
+
+            <p class="lead3">yurika</p>
         </div>
 
         <section id="service" class="section">
@@ -166,12 +180,12 @@
 
             <div class="about_container">
                 <img src="images/profile@2x.png" alt="私の顔写真">
-                <div>
+                <div class="text_contents">
                     <p class="name">YURIKA　-ゆりか-（1995.10.30）</p>
                     <p class="job">ウェブデザイナー/グラフィックデザイナー</p>
                     <p class="comment">公務員からデザインの世界へ。<br>
                         お客様の要望と真摯に向き合い、<br>
-                        共にデザインを創り上げていく姿勢をモットーに。
+                        共にデザインを創り上げていく姿勢を<br class="sp_only">モットーに。
                     </p>
                 </div>
             </div>
@@ -225,37 +239,51 @@
             <div class="contact_body pc_only" style="background-image: url(images/contact@2x.png);">
 
                 <form class="contact_conteiner"
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/formResponse">
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/formResponse"
+                    target="hidden_iframe" onsubmit="submitted=true;">
+
                     <label>
-                        <input type="text" name="entry.1405721956" placeholder="名前">
+                        <input type="text" name="entry.1405721956" placeholder="名前" required>
                     </label>
                     <label>
-                        <input type="text" name="entry.1474901579" placeholder="メールアドレス">
+                        <input type="text" name="entry.1474901579" placeholder="メールアドレス" required>
                     </label>
                     <label>
-                        <textarea type="text" name="entry.587518478" placeholder="メッセージ"></textarea>
+                        <textarea type="text" name="entry.587518478" placeholder="メッセージ" required></textarea>
                     </label>
 
                     <p class="announce">Put in the post</p>
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/viewform?usp=sf_link"><img
-                            src="images/POST.svg" alt="ポストのイラスト"></a>
+                    <button type="submit">
+                        <img src="images/POST.svg" alt="ポストのイラスト"></button>
                 </form>
+                <script type="text/javascript">var submitted = false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted){window.location='thanks/index.html';}"></iframe>
             </div>
 
 
             <div class="contact_body sp_only" style="background-image: url(images/contact_sp@2x.png);">
-                <form class="contact_conteiner">
+                <form class="contact_conteiner"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/formResponse"
+                    target="hidden_iframe" onsubmit="submitted=true;">
+
                     <label>
-                        <input type="text" placeholder="名前">
+                        <input type="text" name="entry.1405721956" placeholder="名前" required>
                     </label>
                     <label>
-                        <input type="text" placeholder="メールアドレス">
+                        <input type="text" name="entry.1474901579" placeholder="メールアドレス" required>
                     </label>
                     <label>
-                        <textarea type="text" placeholder="メッセージ"></textarea>
+                        <textarea type="text" name="entry.587518478" placeholder="メッセージ" required></textarea>
                     </label>
+
+                    <p class="announce">Put in the post</p>
+                    <button type="submit">
+                        <img src="images/POST.svg" alt="ポストのイラスト"></button>
                 </form>
+                <script type="text/javascript">var submitted = false;</script>
+                <iframe name="hidden_iframe" class="hidden_iframe" style="display:none;"
+                    onload="if(submitted){window.location='thanks/index.html';}"></iframe>
             </div>
 
         </section>
@@ -343,6 +371,28 @@
                 }
             });
         });
+
+        $(function () {
+            load_effect();
+            $(window).scroll(function () {
+                scroll_effect();
+            });
+        });
+
+        function load_effect() {
+            var tt = $(window).scrollTop();
+            var hh = $(window).height();
+            $('.load-fade').each(function () {
+                var yy = $(this).offset().top;
+                if (tt > yy - hh) {
+                    $(this).addClass('done');
+                }
+            });
+        }
+
+
+
+
     </script>
 </body>
 
